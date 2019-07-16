@@ -1,0 +1,71 @@
+@import "vars";
+
+body {
+  background-color: whitesmoke;
+}
+
+a {
+  color: darkred;
+}
+
+/* NAVBAR */
+
+.fa, .fa-home, .fas, .fa-envelope, .fas, .fa-phone {
+  font-size: 16px !important;
+}
+
+.navbar {
+  background: #222222;
+  position: -webkit-sticky; /* Safari */
+  top: 0;
+  position: fixed;
+  width: 100%;
+  display: block;
+  transition: top 1s;
+  text-align: center !important;
+  letter-spacing: 2px;
+  box-shadow: 2px 2px 10px white;
+}
+
+.navbar-toggler{
+  align-self: end !important;
+}
+
+
+.nav-item::after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #fec400;
+  transition: 0.4s;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: #fec400;
+  padding: 0 10px 29px;
+}
+
+.nav-link {
+  padding: 15px 5px;
+  transition: 0.2s;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #212529;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  background: #fec400;
+}
+
+/* FIN NAVBAR */
+
+/* CAROUSEL */
+
+
+/* FIN CAROUSEL */
