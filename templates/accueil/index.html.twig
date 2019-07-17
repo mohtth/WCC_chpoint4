@@ -51,7 +51,7 @@
                         </div>
                         <div class=" justify-content-center">
                             <button type="button" class="btn btn-warning" id="prev">Prev</button>
-                            <button type="button" class="btn btn-warning"  id="next">Next</button>
+                            <button type="button" class="btn btn-warning" id="next">Next</button>
                         </div>
                     </div>
                 </div>
@@ -68,20 +68,69 @@
             <p class="lead">Pour les enfants, les adultes, les seniors, ceux du sud, du nord...tout le monde a sa place
                 avec nous</p>
         </div>
-        <div class="container-flex rounded fauves">
+        <div class="container-flex rounded">
             <div class="row align-items-center mb-3">
-                <div class="col-lg-6 order-lg-2">
-                    <div class="p-5">
-                        <img class="img-fluid rounded-circle" src="{{ asset('img/01.jpg') }}" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6 order-lg-1">
-                    <div class="p-5">
-                        <h1>Nos debuts...</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam
-                            sit
-                            iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione
-                            voluptatum molestiae adipisci, beatae obcaecati.</p>
+                <div class="container register">
+                    <div class="row">
+                        <div class="col-md-12 register-right">
+                            <div class="row register-form">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Prenom *"
+                                               value=""/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Nom *"
+                                               value=""/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email *"
+                                               value=""/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" maxlength="10" minlength="10" class="form-control"
+                                               placeholder="Num. de telephone *" value=""/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option class="hidden" selected disabled>
+                                                Combien de tickets?
+                                            </option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option class="hidden" selected disabled>
+                                                Dans quelle tranche etes-vous?
+                                            </option>
+                                            <option>Adult</option>
+                                            <option>Enfant</option>
+                                            <option>Senior</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <div class="input-group">
+                                        <textarea class="form-control" name="Comments" id="Comments" rows="5"
+                                                  style="width:99.9%" placeholder="Votre message">
+
+                                        </textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button id="contacts-submit" type="submit" class="btn btn-info">Envoyer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -226,11 +275,10 @@
                             <div class="form-group">
                                 <div class="col-sm-12">
                                     <div class="input-group">
-                                        <div class="input-group-addon">
-                                            <i class="fa fa-comment fa-2"></i>
-                                        </div>
                                         <textarea class="form-control" name="Comments" id="Comments" rows="5"
-                                                  style="width:99.9%" placeholder="Votre message"></textarea>
+                                                  style="width:99.9%" placeholder="Votre message">
+
+                                        </textarea>
                                     </div>
                                 </div>
                             </div>
