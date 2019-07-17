@@ -1,20 +1,32 @@
 @import "vars";
 
 body {
-  background-color: whitesmoke;
+  font-family: 'Mountains of Christmas', cursive !important;
+  background-image: url("http://www.smirkus.org/wp-content/uploads/2013/08/background_1440x770-blue.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  display: block;
+  background-size: 100%;
 }
 
-a {
-  color: darkred;
+.container2{
+  background-color: blanchedalmond;
 }
 
 /* NAVBAR */
-
 .fa, .fa-home, .fas, .fa-envelope, .fas, .fa-phone {
   font-size: 16px !important;
 }
 
+.navbar-brand {
+  width: 25%;
+  height: 25%;
+}
+
 .navbar {
+  z-index: 9999;
+  font-size: 25px !important;
   background: #222222;
   position: -webkit-sticky; /* Safari */
   top: 0;
@@ -24,10 +36,10 @@ a {
   transition: top 1s;
   text-align: center !important;
   letter-spacing: 2px;
-  box-shadow: 2px 2px 10px white;
+  box-shadow: 0px 10px 50px dimgrey;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   align-self: end !important;
 }
 
@@ -65,7 +77,184 @@ a {
 
 /* FIN NAVBAR */
 
-/* CAROUSEL */
+
+/* PARALLAX */
+.parallax {
+  background-image: url("https://mondrian.mashable.com/wp-content%252Fgallery%252Fcircus-history%252FCircus_02.jpg%252Ffit-in__1440x1000.jpg?signature=ZQA8TWVzHCbj7lM8DnBiqqiOvAo=&source=https%3A%2F%2Fmashable.com");
+  height: 250px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* FIN PARALLAX */
 
 
-/* FIN CAROUSEL */
+.btn-xl {
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.bg-black {
+  background-color: #000 !important;
+}
+
+.rounded-pill {
+  border-radius: 5rem;
+}
+
+header.masthead {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(7rem + 72px);
+  padding-bottom: 7rem;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff6a00), to(#ee0979));
+  background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.masthead .masthead-content {
+  z-index: 1;
+  position: relative;
+}
+
+header.masthead .masthead-content .masthead-heading {
+  font-size: 4rem;
+
+}
+
+header.masthead .masthead-content .masthead-subheading {
+  font-size: 2rem;
+}
+
+header.masthead .bg-circle {
+  z-index: 0;
+  position: absolute;
+  border-radius: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ee0979), to(#ff6a00));
+  background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
+}
+
+header.masthead .bg-circle-1 {
+  height: 90rem;
+  width: 90rem;
+  bottom: -55rem;
+  left: -55rem;
+}
+
+header.masthead .bg-circle-2 {
+  height: 50rem;
+  width: 50rem;
+  top: -25rem;
+  right: -25rem;
+}
+
+header.masthead .bg-circle-3 {
+  height: 20rem;
+  width: 20rem;
+  bottom: -10rem;
+  right: 5%;
+}
+
+header.masthead .bg-circle-4 {
+  height: 30rem;
+  width: 30rem;
+  top: -5rem;
+  right: 35%;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(10rem + 55px);
+    padding-bottom: 10rem;
+  }
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 6rem;
+    text-shadow: 0px 10px 25px black;
+
+  }
+  header.masthead .masthead-content .masthead-subheading {
+    font-size: 4rem;
+    text-shadow: 0px 10px 50px black;
+  }
+}
+
+.bg-primary {
+  background-color: #ee0979 !important;
+}
+
+.btn-primary {
+  background-color: #ee0979;
+  border-color: #ee0979;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: #bd0760 !important;
+  border-color: #bd0760 !important;
+}
+
+.btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(238, 9, 121, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(238, 9, 121, 0.5);
+}
+
+.btn-secondary {
+  background-color: #ff6a00;
+  border-color: #ff6a00;
+}
+
+.btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
+  background-color: #cc5500 !important;
+  border-color: #cc5500 !important;
+}
+
+.btn-secondary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
+}
+
+
+/* ABOUT US*/
+.aboutus {
+  box-shadow: 0px 10px 50px dimgrey;
+}
+
+.fauves{
+  background-color: indianred;
+}
+.ciel{
+  background-color: lightgrey;
+}
+.rire{
+  background-color: #8FB7DB;
+}
+/* FIN ABOUT US*/
+
+
+/* CONTACT US*/
+.formcontact {
+  box-shadow: 0px 10px 50px dimgrey;
+}
+
+.form-control{
+  text-decoration-color: #dc3545 !important;
+}
+
+.panel-body{
+  background-color: ghostwhite;
+  box-shadow: 0px 10px 50px dimgrey;
+}
+
+/* FIN CONTACT US*/
+
+.footer{
+  background: #222222 !important;
+}
+
+

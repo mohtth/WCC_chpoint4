@@ -13,7 +13,6 @@ require('../scss/app.scss');
 
 console.log('Hello Webpack Encore! Edit me in assets/js/app.js');
 
-
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
@@ -24,3 +23,4 @@ window.onscroll = function () {
     }
     prevScrollpos = currentScrollPos;
 }
+
