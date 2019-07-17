@@ -1,5 +1,254 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+    <header class="masthead text-center text-white">
+        <div class="masthead-content">
+            <div class="container">
+                <h1 class="masthead-heading mb-0">Welcome</h1>
+                <h2 class="masthead-heading mb-0">to</h2>
+                <h1 class="masthead-subheading mb-0">Wild Code Circus</h1>
+                <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
+            </div>
+        </div>
+        <div class="bg-circle-1 bg-circle"></div>
+        <div class="bg-circle-2 bg-circle"></div>
+        <div class="bg-circle-3 bg-circle"></div>
+        <div class="bg-circle-4 bg-circle"></div>
+    </header>
 
+    <div class="parallax"></div>
+
+    <div class="container container2 aboutus mt-5 mb-5 rounded">
+        <div class="col-12 text-center">
+            <h1 class="display-4 justify-content-center">Nos spectacles</h1>
+            <br>
+            <p class="lead">Les spectacles du moment:</p>
+        </div>
+        <div class="container-flex rounded">
+            <div class="row align-items-center mb-3">
+                <div class="col-12">
+                    <div id="carousel">
+                        <div class="hideLeft">
+                            <img src={{ asset("./image/spectacle1.jpg") }}>
+                        </div>
+                        <div class="prevLeftSecond">
+                            <img src={{ asset("./image/spectacle2.jpg") }}>
+                        </div>
+                        <div class="prev">
+                            <img src={{ asset("./image/spectacle3.jpg") }}>
+                        </div>
+                        <div class="selected">
+                            <img src={{ asset("./image/spectacle4.jpg") }}>
+                        </div>
+                        <div class="next">
+                            <img src={{ asset("./image/spectacle5.jpg") }}>
+                        </div>
+                        <div class="nextRightSecond">
+                            <img src={{ asset("./image/spectacle6.jpg") }}>
+                        </div>
+                        <div class="hideRight">
+                            <img src={{ asset("./image/spectacle7.jpg") }}>
+                        </div>
+                        <div class=" justify-content-center">
+                            <button type="button" class="btn btn-warning" id="prev">Prev</button>
+                            <button type="button" class="btn btn-warning"  id="next">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax"></div>
+
+    <div class="container container2 mt-5 mb-5 rounded">
+        <div class="col-12 text-center">
+            <h1 class="display-4 justify-content-center">Billeterie</h1>
+            <br>
+            <p class="lead">Pour les enfants, les adultes, les seniors, ceux du sud, du nord...tout le monde a sa place
+                avec nous</p>
+        </div>
+        <div class="container-flex rounded fauves">
+            <div class="row align-items-center mb-3">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="p-5">
+                        <img class="img-fluid rounded-circle" src="{{ asset('img/01.jpg') }}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="p-5">
+                        <h1>Nos debuts...</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, mollitia odio veniam
+                            sit
+                            iste esse assumenda amet aperiam exercitationem, ea animi blanditiis recusandae! Ratione
+                            voluptatum molestiae adipisci, beatae obcaecati.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax"></div>
+
+    <div class="container container2 mt-5 mb-5 rounded">
+        <div class="col-12 text-center">
+            <h1 class="display-4 justify-content-center">Qui sommes-nous?</h1>
+            <br>
+            <p class="lead">Un petit tour dans notre histoire:</p>
+        </div>
+        <div class="row">
+            <div class="col-12 aboutrow justify-content-center">
+                <div class="card col-sm-4 m-2">
+                    <div class="image">
+                        <img class="m-2" src={{ asset("./image/passe.jpg") }}/>
+                    </div>
+                    <div class="details">
+                        <div class="center">
+                            <h1>Notre passé<br><span>team leader</span></h1>
+                            <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-sm-4 m-2">
+                    <div class="image">
+                        <img class="m-2" src={{ asset("./image/present.jpg") }}/>
+                    </div>
+                    <div class="details">
+                        <div class="center">
+                            <h1>Le present<br><span>team leader</span></h1>
+                            <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-sm-4 m-2">
+                    <div class="image">
+                        <img class="m-2" src={{ asset("./image/avenir.jpg") }}/>
+                    </div>
+                    <div class="details">
+                        <div class="center">
+                            <h1>L'avenir<br><span>team leader</span></h1>
+                            <p>Lorem ipsum is simple dummy text on the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax"></div>
+
+    <div class="container rounded container2 formcontact mt-5 mb-5">
+        <div class="col-12 text-center">
+            <h1 class="display-4">Contactez nous</h1><br>
+            <p class="lead">Vous avez des questions?</p><br>
+
+            <p>Nous vous repondrons le plus rapidement possible.</p> <br>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <!-- BEGIN DOWNLOAD PANEL -->
+                <div class="panel panel-default well">
+                    <div class="panel-body">
+                        <form action="" class="form-horizontal track-event-form bv-form" data-goaltype="”General”"
+                              data-formname="”ContactUs”" method="post" id="contact-us-all" novalidate="novalidate">
+                            <input name="elqSiteId" type="hidden" value="928">
+                            <input name="sFDCLastCampaignID" type="hidden" value="701400000012Lql">
+                            <input name="elqFormName" type="hidden" value="EMEAAllContactUsSubmissions">
+                            <input name="nexturl" type="hidden" value="">
+                            <input name="Partner" type="hidden" value="">
+                            <input name="language" type="hidden" value="en">
+
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-user"></i>
+                                        </div>
+                                        <input type="text" class="form-control" id="exampleInputFirstName"
+                                               placeholder="Votre prenom" name="C_FirstName"
+                                               data-bv-field="C_FirstName">
+                                    </div>
+                                    <small data-bv-validator="notEmpty" data-bv-validator-for="C_FirstName"
+                                           class="help-block" style="display: none;">Required
+                                    </small>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-user"></i>
+                                        </div>
+                                        <input type="text" class="form-control" id="exampleInputLastName"
+                                               placeholder="Votre nom" name="C_LastName" data-bv-field="C_LastName">
+                                    </div>
+                                    <small data-bv-validator="notEmpty" data-bv-validator-for="C_LastName"
+                                           class="help-block" style="display: none;">Required
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-envelope"></i>
+                                        </div>
+                                        <input type="text" class="form-control" id="exampleInputEmail1"
+                                               placeholder="Votre email" name="C_EmailAddress"
+                                               data-bv-field="C_EmailAddress">
+                                    </div>
+                                    <small data-bv-validator="notEmpty" data-bv-validator-for="C_EmailAddress"
+                                           class="help-block" style="display: none;">Required
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="form-group rounded">
+                                <div class="col-sm-12">
+                                    <small data-bv-validator="callback" data-bv-validator-for="C_Country"
+                                           class="help-block"
+                                           style="display: none;">Choose one
+                                    </small>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                        <input type="text" class="form-control" id="C_BusPhone"
+                                               placeholder="Votre numero de telephone"
+                                               name="C_BusPhone">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-comment fa-2"></i>
+                                        </div>
+                                        <textarea class="form-control" name="Comments" id="Comments" rows="5"
+                                                  style="width:99.9%" placeholder="Votre message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-12 text-center pb-3">
+                                    <button id="contacts-submit" type="submit" class="btn btn-info">Envoyer
+                                    </button>
+                                </div>
+                            </div>
+                            <input type="hidden" value=""></form>
+                    </div><!-- end panel-body -->
+                </div><!-- end panel -->
+                <!-- END DOWNLOAD PANEL -->
+            </div><!-- end col-md-8 -->
+            <div class="col-md-2"> </div>
+        </div>
+    </div>
+
+    <div class="parallax"></div>
 {% endblock %}
