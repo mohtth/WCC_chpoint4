@@ -1,0 +1,511 @@
+@import "vars";
+
+body {
+  font-family: 'Mountains of Christmas', cursive !important;
+  background-image: url("http://www.smirkus.org/wp-content/uploads/2013/08/background_1440x770-blue.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  display: block;
+  background-size: 100%;
+}
+
+.container2{
+  background-color: blanchedalmond;
+}
+
+/* NAVBAR */
+.logocss{
+  float:left;
+  width:150px;
+  height:75px;
+}
+
+.navbar-brand {
+  width: 25%;
+  height: 25%;
+}
+
+.navbar {
+  z-index: 9999;
+  font-size: 25px !important;
+  background: #313131;
+  position: -webkit-sticky; /* Safari */
+  top: 0;
+  position: fixed;
+  width: 100%;
+  display: block;
+  transition: top 1s;
+  text-align: center !important;
+  letter-spacing: 2px;
+  box-shadow: 0px 10px 50px #ff6a00;
+}
+
+.navbar-toggler {
+  align-self: end !important;
+}
+
+
+.nav-item::after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #ff6a00;
+  transition: 0.4s;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: #ff6a00;
+  padding: 0 10px 29px;
+}
+
+.nav-link {
+  padding: 15px 5px;
+  transition: 0.2s;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #212529;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  background: #fec400;
+}
+
+/* FIN NAVBAR */
+
+
+/* PARALLAX */
+.parallax {
+  background-image: url("https://mondrian.mashable.com/wp-content%252Fgallery%252Fcircus-history%252FCircus_02.jpg%252Ffit-in__1440x1000.jpg?signature=ZQA8TWVzHCbj7lM8DnBiqqiOvAo=&source=https%3A%2F%2Fmashable.com");
+  height: 250px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* FIN PARALLAX */
+
+
+/* SPECTACLES */
+main {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#carousel {
+  position: relative;
+  height: 400px;
+  top: 50%;
+  transform: translateY(20%);
+  overflow: hidden;
+}
+#carousel div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+img {
+  width: 400px;
+  transition: width 1s;
+}
+.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+.hideLeft img {
+  width: 200px;
+}
+.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+.hideRight img {
+  width: 200px;
+}
+.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+}
+.prev img {
+  width: 300px;
+}
+.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+.prevLeftSecond img {
+  width: 200px;
+}
+.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+}
+.next img {
+  width: 300px;
+}
+.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+.nextRightSecond img {
+  width: 200px;
+}
+
+.buttons {
+  position: fixed;
+  transform: translateX(20%);
+}
+/* FIN SPECTACLES */
+
+
+
+/* ABOUTUS */
+.card {
+  width: 340px;
+  height: 380px;
+}
+.card .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.card .image img {
+  width: 340px;
+  height: 360px;
+  transition: 1s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.card .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;/*100%*/
+  height: 100%;
+  background: #ffc107;
+  transition: 1s;
+  transform-origin: left;
+  transform: perspective(2000px) rotateY(0deg);
+}
+.card:hover .details {
+  transform: perspective(2000px) rotateY(-90deg);
+}
+.card .details .center {
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.card .details .center h1 {
+  margin: 0;
+  padding: 0;
+  color: #ff3636;
+  line-height: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.card .details .center h1 span {
+  font-size: 14px;
+  color: #262626;
+}
+.card .details .center p {
+  margin: 10px 0;
+  padding: 0;
+  color: #262626;
+}
+.card .details .center ul {
+  margin: 10px auto 0;
+  padding: 0;
+  display: table;
+}
+.card .details .center ul li {
+  list-style: none;
+  margin: 0 5px;
+  float: left;
+}
+.card .details .center ul li a {
+  display: block;
+  background: #262626;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  transform: 1s;
+}
+.card .details .center ul li a:hover {
+  background: #ff3636;
+}
+
+.aboutrow{
+  display: -webkit-inline-box !important;
+}
+/* FIN ABOUTUS */
+
+/*  BILLETTERIE */
+.register-left{
+  text-align: center;
+  color: #fff;
+  margin-top: 4%;
+}
+.register-left input{
+  border: none;
+  border-radius: 1.5rem;
+  padding: 2%;
+  width: 60%;
+  background: #f8f9fa;
+  font-weight: bold;
+  color: #383d41;
+  margin-top: 30%;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+.register-right{
+  background: #f8f9fa;
+  border-top-left-radius: 10% 50%;
+  border-bottom-left-radius: 10% 50%;
+  box-shadow: #313131;
+}
+
+.register .register-form{
+  padding: 10%;
+}
+.btnRegister{
+  float: right;
+  margin-top: 10%;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 2%;
+  background: #0062cc;
+  color: #fff;
+  font-weight: 600;
+  width: 50%;
+  cursor: pointer;
+}
+.register .nav-tabs{
+  margin-top: 3%;
+  border: none;
+  background: #0062cc;
+  border-radius: 1.5rem;
+  width: 28%;
+  float: right;
+}
+.register .nav-tabs .nav-link{
+  padding: 2%;
+  height: 34px;
+  font-weight: 600;
+  color: #fff;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+.register .nav-tabs .nav-link:hover{
+  border: none;
+}
+.register .nav-tabs .nav-link.active{
+  width: 100px;
+  color: #0062cc;
+  border: 2px solid #0062cc;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+.register-heading{
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: -15%;
+  color: #495057;
+}
+/* FIN BILLETTERIE */
+
+.btn-xl {
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.bg-black {
+  background-color: #000 !important;
+}
+
+.rounded-pill {
+  border-radius: 5rem;
+}
+
+header.masthead {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(7rem + 72px);
+  padding-bottom: 7rem;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff6a00), to(#ee0979));
+  background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.masthead .masthead-content {
+  z-index: 1;
+  position: relative;
+}
+
+header.masthead .masthead-content .masthead-heading {
+  font-size: 4rem;
+
+}
+
+header.masthead .masthead-content .masthead-subheading {
+  font-size: 2rem;
+}
+
+header.masthead .bg-circle {
+  z-index: 0;
+  position: absolute;
+  border-radius: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ee0979), to(#ff6a00));
+  background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
+}
+
+header.masthead .bg-circle-1 {
+  height: 90rem;
+  width: 90rem;
+  bottom: -55rem;
+  left: -55rem;
+}
+
+header.masthead .bg-circle-2 {
+  height: 50rem;
+  width: 50rem;
+  top: -25rem;
+  right: -25rem;
+}
+
+header.masthead .bg-circle-3 {
+  height: 20rem;
+  width: 20rem;
+  bottom: -10rem;
+  right: 5%;
+}
+
+header.masthead .bg-circle-4 {
+  height: 30rem;
+  width: 30rem;
+  top: -5rem;
+  right: 35%;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(10rem + 55px);
+    padding-bottom: 10rem;
+  }
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 6rem;
+    text-shadow: 0px 10px 25px black;
+
+  }
+  header.masthead .masthead-content .masthead-subheading {
+    font-size: 4rem;
+    text-shadow: 0px 10px 50px black;
+  }
+}
+
+.bg-primary {
+  background-color: #ee0979 !important;
+}
+
+.btn-primary {
+  background-color: #ee0979;
+  border-color: #ee0979;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: #bd0760 !important;
+  border-color: #bd0760 !important;
+}
+
+.btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(238, 9, 121, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(238, 9, 121, 0.5);
+}
+
+.btn-secondary {
+  background-color: #ff6a00;
+  border-color: #ff6a00;
+}
+
+.btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
+  background-color: #cc5500 !important;
+  border-color: #cc5500 !important;
+}
+
+.btn-secondary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
+}
+
+
+/* ABOUT US*/
+.aboutus {
+  box-shadow: 0px 10px 50px dimgrey;
+}
+
+.fauves{
+  background-color: indianred;
+}
+.ciel{
+  background-color: lightgrey;
+}
+.rire{
+  background-color: #8FB7DB;
+}
+/* FIN ABOUT US*/
+
+
+/* CONTACT US*/
+.formcontact {
+  box-shadow: 0px 10px 50px dimgrey;
+}
+
+.form-control::placeholder{
+ color: #dc3545 !important;
+}
+
+.panel-body{
+  background-color: ghostwhite;
+  box-shadow: 0px 10px 50px dimgrey;
+}
+
+/* FIN CONTACT US*/
+
+.footer{
+  background: #313131 !important;
+}
+
+
